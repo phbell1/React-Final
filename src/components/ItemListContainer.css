@@ -1,0 +1,21 @@
+h1 {
+    text-align: center;
+
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 28px;
+    text-align: center;
+ }
+
+
+ article {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+ }

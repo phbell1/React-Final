@@ -1,0 +1,34 @@
+h1{
+    font-size: 30px;
+    padding-right: 15px;
+}
+
+
+.contMenu {
+    background-color:rgb(166, 226, 166);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+
+.navMenu {
+    background-color:rgb(166, 226, 166) ;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: end;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    background-color:rgb(166, 226, 166); 
+    padding:0px;
+    justify-content:center;
+}
+
+
+
