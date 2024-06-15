@@ -1,0 +1,27 @@
+.prod-detail {
+    border: 1px solid black;
+    width: 50vh;
+    margin: 50px auto;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-prod {
+    height:30vh;
+    
+}
+
+p {
+    font-size: 15px;
+    font-weight:500;
+    color:brown;
+
+}
+
+h4 {
+    text-align: center;
+    font-size: 15px;
+}

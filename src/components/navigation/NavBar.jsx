@@ -9,19 +9,20 @@ export default function NavBar() {
             <div className="contMenu">
                 <LogoComponent/>
                 <nav className="navMenu">
-                    <ul>
-                        <ListaComponente seccion="Inicio" ruta="/" />
-                        <ListaComponente seccion="Plantas Interior" ruta="/interior" />
-                        <ListaComponente seccion="Plantas Exterior" ruta="/exterior" />
-                        <ListaComponente seccion="Maceteria" ruta="/maceteria" />
+                    <ul className="ulNav">
+                        <ListaComponente seccion="Inicio" ruta="/home" />
+                        <ListaComponente seccion="Plantas Interior" ruta="/category/Interior"/>
+                        <ListaComponente seccion="Plantas Exterior" ruta="category/Exterior"/>
+                        <ListaComponente seccion="Maceteria" ruta="category/Maceteria"/>
                         <ListaComponente seccion="Contacto" ruta="/contact" />
                         <CartWidget />
                     </ul>
                 </nav>
             </div>
 
+
         </>
     );
-}
+} 
 
 

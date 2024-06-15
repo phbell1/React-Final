@@ -21,7 +21,7 @@ h1{
     justify-content: center;
 }
 
-ul {
+.ulNav {
     list-style: none;
     display: flex;
     flex-wrap: wrap;

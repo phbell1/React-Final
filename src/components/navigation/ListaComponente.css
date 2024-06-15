@@ -1,4 +1,4 @@
-li {
+.liNav {
     background-color:rgb(166, 226, 166) ;
     display: flex;
     flex-wrap: wrap;

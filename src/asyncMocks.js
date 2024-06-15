@@ -6,7 +6,7 @@ const products = [
         title: 'Echeveria Elegans',
         price: 1500,
         category: 'Interior',
-        description: '',
+        description: 'Es una planta suculenta originaria de México, popular en jardinería debido a su atractivo aspecto y a su facilidad de cuidado',
         image: '../src/assets/img/int/int-0001.jpg',
     },
 
@@ -81,6 +81,7 @@ export const getProducts = new Promise((resolve) => {
     setTimeout(() => {
         resolve(products);
 
+
     }, 2000)
 
 });
@@ -88,5 +89,10 @@ export const getProducts = new Promise((resolve) => {
 export const getProduct = (id) => {
     return products.find((prod) => prod.id == id);
 };
+
+export const getCats = (prodCat) => {
+    return products.filter((prod) => prod.category == prodCat)
+}
+
 
 

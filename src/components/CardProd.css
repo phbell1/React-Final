@@ -1,6 +1,3 @@
-
-
-
 .card {
     border: 1px solid black;
     padding: 12px;
@@ -24,3 +21,29 @@ h4 {
     text-align: center;
     font-size: 15px;
 }
+
+
+button{
+    border: none;
+    border-radius: 15cap;
+}
+.linkButton{
+    background-color:none;
+    color:black;
+    font-size:18px;
+    text-decoration: none;
+    border: none;
+    border-radius: 15cap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.linkButton:hover{
+    background-color:rgb(166, 226, 166) ;
+    color:black;
+
+}
+
