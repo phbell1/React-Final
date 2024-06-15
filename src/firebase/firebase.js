@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { collection, getDocs, getFirestore, query, where } from "firebase/firestore";
+import { collection, getDocs, getFirestore, query, where, getDoc, addDoc, doc } from "firebase/firestore";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -17,35 +17,36 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-const db = getFirestore(app); 
+const db = getFirestore(app);
 
-export async function getProducts(){
-    const response = await getDocs(collection(db,'products'));
-    const listaProds= [];
-    response.forEach((dcmt) => listaProds.push({id: dcmt.id, ...dcmt.data()}));
-    return listaProds; 
+export async function getProducts() {
+  const response = await getDocs(collection(db, 'products'));
+  const listaProds = [];
+  response.forEach((dcmt) => listaProds.push({ id: dcmt.id, ...dcmt.data() }));
+  return listaProds;
 }
 
-export async function getCats(prodCat){
-  const consulta = query(collection(db,'products'), where('category','==',prodCat));
+export async function getCats(prodCat) {
+  const consulta = query(collection(db, 'products'), where('category', '==', prodCat));
   const response = await getDocs(consulta);
   const listaCats = [];
-  response.forEach((dcmt) => listaCats.push({id: dcmt.id, ...dcmt.data()}));
+  response.forEach((dcmt) => listaCats.push({ id: dcmt.id, ...dcmt.data() }));
   return listaCats;
 }
 
-export async function getProduct(id){
-  const consulta = query(collection(db,'products'), where('id','==',id));
-  const response = await getDocs(consulta);
-  const product = [];
-  response.forEach((dcmt) => product.push({id: dcmt.id, ...dcmt.data()}));
-  return product;
-}
 
-
-
-/*export const getProduct = (id) => {
-  return products.find((prod) => prod.id == id);
-};*/
-
+export const getProduct = async (prodId) => {
+  const fbProduct = doc(db, "products", prodId);
+  try {
+    const response = await getDoc(fbProduct);
+    if (response.exists()) {
+      const product = { ...response.data(), id: response.id };
+      return product;
+    } else {
+      return null;
+    }
+  } catch (error) {
+    console.log("Ha ocurrido un error", error);
+  }
+};
 

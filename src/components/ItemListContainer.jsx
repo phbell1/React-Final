@@ -1,5 +1,4 @@
 import './ItemListContainer.css';
-/*import { getProducts, getCats } from '../asyncMocks';*/
 import { getProducts, getCats } from '../firebase/firebase';
 import { useEffect, useState } from 'react';
 import CardProd from './CardProd';
