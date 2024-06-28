@@ -10,18 +10,93 @@
 }
 
 .img-prod {
-    height:30vh;
-    
+    height: 30vh;
+
 }
 
 p {
     font-size: 15px;
-    font-weight:500;
-    color:brown;
+    font-weight: 500;
+    color: brown;
+    margin: 5px auto;
 
 }
 
 h4 {
     text-align: center;
     font-size: 15px;
+}
+
+.price {
+    color:black;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.countCont {
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.items {
+    font-size: 22px;
+    width: 15px;
+    color: black;
+
+}
+
+.countButtons {
+    background-color: rgb(166, 226, 166);
+    color: black;
+    font-size: 25px;
+    width: 30px;
+    text-decoration: none;
+    border: none;
+    border-radius: 0%;
+}
+
+.addToCartButton {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color:none;
+    width: 200px;
+    color: black;
+    font-size: 25px;
+    text-decoration: none;
+    border: none;
+    border-radius: 15cap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.addToCartButton:hover {
+    background-color: rgb(166, 226, 166);
+    color: black;
+}
+
+.linkButton{
+    background-color:none;
+    color:black;
+    font-size:18px;
+    text-decoration: none;
+    border: none;
+    border-radius: 15cap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.linkButton:hover{
+    background-color:rgb(166, 226, 166) ;
+    color:black;
+
 }

@@ -2,12 +2,14 @@ import './ItemDetailContainer.css';
 import { useParams } from "react-router-dom"
 import { getProduct } from '../firebase/firebase';
 import { useEffect, useState } from "react";
+import ItemDetail from './ItemDetail';
+
 
 export default function ItemDetailContainer() {
     const [product, setProduct] = useState({});
 
     const { prodId } = useParams();
-    
+
     useEffect(() => {
         const getDetail = async () => {
             const product = await getProduct(prodId);
@@ -23,13 +25,9 @@ export default function ItemDetailContainer() {
 
     return (
         <>
-            <div className="prod-detail">
-                <p> ID: {prodId}</p>
-                <h4>{product.title}</h4>
-                <img className="img-prod" src={product.image} alt={product.title} />
-                <p>Precio: ${product.price}</p>
-                <p>Categoria: {product.category}</p>
-                <p>Descripcion: {product.description}</p>
+            <div className="prod-detail" key={product.id}>
+                <ItemDetail product={product}
+                />
             </div >
 
 

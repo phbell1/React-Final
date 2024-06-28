@@ -1,0 +1,96 @@
+
+.contArt {
+    border:none;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.contCart {
+
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.fontCart{
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 220px;
+    font-weight:300;
+}
+
+.imgCart{
+    height: 10vh;
+
+
+}
+
+.totalCart{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    font-weight: bold;
+
+
+}
+
+.borrarButton{
+    background-color:none;
+    width: 100px;
+    color:red;
+    font-size: 12px;
+    text-decoration: none;
+    border: none;
+    border-radius: 15cap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.borrarButton:hover{
+    background-color: rgb(166, 226, 166);
+    color:white;
+    
+}
+
+.contButtons{
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.buttons{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color:none;
+    width: 200px;
+    color: black;
+    font-size: 25px;
+    text-decoration: none;
+    border: none;
+    border-radius: 15cap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons:hover {
+    background-color: rgb(166, 226, 166);
+    color: black;
+}
+
+.chk {
+    text-decoration: none;
+    color:black;
+    border: none;
+    font-size: 25px;
+
+
+}

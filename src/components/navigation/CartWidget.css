@@ -1,5 +1,13 @@
 
 .cart{
-    width: 50px;
+    width: 100px;
     margin-left: 15px;
+    color:black;
+    text-decoration: none;
+    border: none;
+    font-family:sans-serif;
+}
+
+.cart:hover {
+    color:black;
 }
