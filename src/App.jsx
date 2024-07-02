@@ -1,5 +1,6 @@
 
 import './App.css'
+import Swal from 'sweetalert2';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NavBar from './components/navigation/NavBar';
 import ItemListContainer from './components/ItemListContainer';

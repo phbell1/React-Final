@@ -16,9 +16,9 @@ export default function Cart() {
     return (
         <>
             <h1>Carrito de Compras</h1>
-            {quantTotal() === 0 ? (
+            {quantTotal() === 0 ?
                 <p>El carrito está vacío</p>
-            ) : (
+             : 
                 <>
                     <article className='contArt'>
                         {cartProds.map((prodCart, index) => (
@@ -31,7 +31,7 @@ export default function Cart() {
                         <button className='buttons'><Link className='chk' to='/checkout'>Checkout</Link></button>
                     </div>
                 </>
-            )}
+            }
         </>
     );
 

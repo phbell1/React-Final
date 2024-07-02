@@ -50,3 +50,8 @@ export const getProduct = async (prodId) => {
   }
 };
 
+export async function sendOrder(newOrder){
+  const ordersCollection = collection(db, 'orders');
+  const docRef = await addDoc(ordersCollection, newOrder);
+  return docRef.id;
+}
