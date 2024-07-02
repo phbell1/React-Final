@@ -9,7 +9,7 @@ export default function ItemListContainer({ welcome }) {
 
     const [products, setProducts] = useState([]);
     
-    const {idCat} = useParams();
+    const {idCat, home} = useParams();
     
     useEffect(() => {
         if (idCat){

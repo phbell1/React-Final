@@ -10,7 +10,7 @@ export default function NavBar() {
                 <LogoComponent/>
                 <nav className="navMenu">
                     <ul className="ulNav">
-                        <ListaComponente seccion="Inicio" ruta="/" />
+                        <ListaComponente seccion="Inicio" ruta="/home" />
                         <ListaComponente seccion="Plantas Interior" ruta="/category/Interior"/>
                         <ListaComponente seccion="Plantas Exterior" ruta="/category/Exterior"/>
                         <ListaComponente seccion="Maceteria" ruta="/category/Maceteria"/>

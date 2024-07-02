@@ -43,6 +43,8 @@ const useForm = (initData, validate) => {
 
     }
 
+
+
     const showAlert = (idOrden) => {
         Swal.fire({
             icon: "success",
@@ -54,7 +56,7 @@ const useForm = (initData, validate) => {
                 setForm(initData);
                 setLoading(false);
                 vaciarCart();
-
+                window.location.href = '/home';
             }
         })
     }
