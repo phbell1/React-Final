@@ -66,12 +66,13 @@
 }
 
 .buttons{
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     background-color:none;
-    width: 200px;
+    width: 250px;
+    padding: 5px;
     color: black;
-    font-size: 25px;
+    font-size: 20px;
     text-decoration: none;
     border: none;
     border-radius: 15cap;
@@ -90,7 +91,7 @@
     text-decoration: none;
     color:black;
     border: none;
-    font-size: 25px;
+    font-size: 20px;
 
 
 }

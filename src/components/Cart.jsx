@@ -28,6 +28,7 @@ export default function Cart() {
                     <p className='totalCart'>Total de la Compra $ {totalAmount()}</p>
                     <div className='contButtons'>
                         <button className='buttons' onClick={handleCart}>Vaciar Carrito</button>
+                        <button className='buttons'><Link className='chk' to='/home'>Seguir Comprando</Link></button>
                         <button className='buttons'><Link className='chk' to='/checkout'>Checkout</Link></button>
                     </div>
                 </>

@@ -18,7 +18,7 @@ function App() {
         <CartProvider>
           <NavBar />
           <Routes>
-            <Route exact path="/:home" element={<ItemListContainer welcome='Bienvenidos a Vivero Green House' />} />
+            <Route exact path="/home" element={<ItemListContainer welcome='Bienvenidos a Vivero Green House' />} />
             <Route exact path="/category/:idCat" element={<ItemListContainer />} />
             <Route exact path="/products/:prodId" element={<ItemDetailContainer />} />
             <Route exact path="/cart" element={<Cart />} />
